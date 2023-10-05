@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="extensionContainer">
+        <!-- Hidden file input -->
+        <button class="btn animated-btn" id="uploadBtn">
+            <input type="file" id="pdfInput">
+            Upload
+        </button>
+        <button class="btn animated-btn" id="extractBtn">
+            Extract Text
+        </button>
+        <button class="btn animated-btn" id="generateBtn">
+            Generate Answers
+        </button>
+        <button class="btn animated-btn" id="downloadBtn">
+            Download PDF
+        </button>
+    </div>
+    <script src="script.js"></script> <!-- Include your JavaScript file -->
+    <script src="./pdfjs/build/pdf.js"></script>
+    <script src="./pdfjs/build/pdf.worker.js"></script>
+</body>
+
+</html>

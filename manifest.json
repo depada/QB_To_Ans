@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "QB_To_Ans",
+  "version": "1.0",
+  "description": "Find Answers for Qbs",
+  "permissions": ["activeTab", "storage", "downloads", "scripting", "tabs"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"]
+    }
+  ]
+}
